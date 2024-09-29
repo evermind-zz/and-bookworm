@@ -8,8 +8,8 @@ android {
         applicationId = "com.github.evermindzz.bookworm"
         minSdk 4
         targetSdk 10
-        versionCode 19
-        versionName "1.0.18"
+        versionCode 20
+        versionName "1.0.19"
     }
 
     buildTypes {
