@@ -77,6 +77,7 @@ public class Main extends Activity {
    private ImageView addSearchImage;
    private ImageView addFormImage;
    private ImageView manageDataImage;
+   private ImageView settingsImage;
 
    private Bitmap coverImageMissing;
    private Bitmap star0;
@@ -160,6 +161,12 @@ public class Main extends Activity {
       manageDataImage.setOnClickListener(new OnClickListener() {
          public void onClick(View v) {
             manageDataDialog.show();
+         }
+      });
+      settingsImage = (ImageView) findViewById(R.id.actionsettings);
+      settingsImage.setOnClickListener(new OnClickListener() {
+         public void onClick(View v) {
+            openOptionsMenu();
          }
       });
 
