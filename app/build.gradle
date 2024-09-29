@@ -1,0 +1,25 @@
+apply plugin: 'com.android.application'
+
+android {
+    namespace "com.totsp.bookworm"
+    compileSdk 10
+
+    defaultConfig {
+        applicationId = "com.github.evermindzz.bookworm"
+        minSdk 4
+        targetSdk 10
+        versionCode 19
+        versionName "1.0.18"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}
